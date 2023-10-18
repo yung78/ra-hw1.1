@@ -9,7 +9,7 @@ const item = {
   currency: '£'
 }
 
-const ShopItemFunc = () => (
+function ShopItemFunc({ item }) {
   <div class="main-content">
   <h2>{ item.brand }</h2>
   <h1>{ item.title }</h1>
@@ -24,8 +24,7 @@ const ShopItemFunc = () => (
     <button>Добавить в корзину</button>
   </div>
 </div>
-);
-
+}
 
 function App() {
   return (
